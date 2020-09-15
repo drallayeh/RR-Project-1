@@ -1,4 +1,4 @@
-# App Project- Abdou Allayeh
+# Abdou Allayeh
 # 15 September 2020
 
 # This is the user-interface definition of a Shiny web application. You can
@@ -12,22 +12,25 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
+library(colourpicker)
 library(htmlwidgets)
-
+library(plotly)
+library(shinycustomloader)
 data(mtcars)
 
-# Define UI for application that draws a histogram
 ui <- fluidPage(
-    # Application title
-        titlePanel("Car Data App"),
+    titlePanel("Car Data App"),
     sidebarLayout(
         sidebarPanel(
+            textInput("title", "Title"),
+            numericInput("size", "Point size", 1, 1),
+            colourInput("color", "Point color", value = "red"),
             uiOutput("mtcars2"),
-            downloadButton("download_data")
         ),
         mainPanel(
-            plotOutput("hist"),
-            br(), br()
+            tabsetPanel(type = "tabs",
+                        
+                        tabPanel("Plot", withLoader(plotlyOutput("plot"))))
         )
     )
 )

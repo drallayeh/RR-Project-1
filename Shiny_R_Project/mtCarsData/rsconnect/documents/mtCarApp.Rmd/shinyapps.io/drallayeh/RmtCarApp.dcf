@@ -1,0 +1,12 @@
+name: RmtCarApp
+title: RmtCarApp
+username:
+account: drallayeh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2813775
+bundleId: 3632184
+url: https://drallayeh.shinyapps.io/RmtCarApp/
+when: 1600189432.25302
+asMultiple: FALSE
+asStatic: FALSE

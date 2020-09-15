@@ -1,0 +1,12 @@
+name: mtCarApp
+title: mtCarApp
+username:
+account: drallayeh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2813606
+bundleId: 3632130
+url: https://drallayeh.shinyapps.io/mtCarApp/
+when: 1600188117.12532
+asMultiple: FALSE
+asStatic: FALSE
